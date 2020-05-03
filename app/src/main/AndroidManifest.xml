@@ -11,13 +11,13 @@
         android:theme="@style/AppTheme">
         <activity android:name=".view.account.aboutUs.AboutUs"></activity>
         <activity android:name=".view.createAccount.ValidateAccountUser" />
-        <activity android:name=".view.createAccount.askCollaborator" />
-        <activity android:name=".view.createAccount.askUser" />
+        <activity android:name=".view.createAccount.AskCollaborator" />
+        <activity android:name=".view.createAccount.AskUser" />
         <activity android:name=".view.createAccount.CreateAccountCollaborator" />
         <activity android:name=".view.createAccount.CreateAccountUser" />
         <activity android:name=".view.login.LoginUser" />
         <activity android:name=".view.login.LoginType" />
-        <activity android:name=".view.createAccount.CrearAccountType" />
+        <activity android:name=".view.createAccount.CreateAccountType" />
         <activity android:name=".view.login.Login" />
         <activity android:name=".view.MainActivity">
             <intent-filter>

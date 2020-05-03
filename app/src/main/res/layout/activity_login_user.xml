@@ -7,38 +7,41 @@
     tools:context=".view.login.LoginUser">
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="210dp"
+        android:id="@+id/loginUser"
+        android:layout_width="230dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="49dp"
         android:layout_marginEnd="8dp"
         android:text="Iniciar sesión"
         android:textSize="35dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/txt_numberCelUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="42dp"
         android:layout_marginEnd="8dp"
         android:text="Número de celular"
+        android:textStyle="bold"
+        android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/loginUser" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editText_loginUserCel"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
         android:hint="Ingresa tú número celular"
@@ -47,27 +50,29 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.294"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_numberCelUser" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/txt_pwdLoginUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="8dp"
         android:text="Contraseña"
+        android:textStyle="bold"
+        android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.087"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_loginUserCel" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/editText_loginPwdUser"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
         android:hint="ingresa tú contraseña"
@@ -75,34 +80,37 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.294"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_pwdLoginUser" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/txt_loginUserProblem"
         android:layout_width="wrap_content"
         android:layout_height="18dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="8dp"
+        android:textStyle="bold"
         android:text="¿Problemas para iniciar sesión?"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_loginUser" />
 
     <Button
-        android:id="@+id/button5"
-        android:layout_width="250dp"
+        android:id="@+id/btn_loginUser"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
         android:text="Iniciar sesión"
+        android:background="@drawable/btn_one"
+        android:textColor="#FFFFFFFF"
+        android:layout_width="290dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_loginPwdUser" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/txt_helpLoginUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -113,6 +121,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/txt_loginUserProblem"
         app:layout_constraintVertical_bias="0.9" />
 </androidx.constraintlayout.widget.ConstraintLayout>

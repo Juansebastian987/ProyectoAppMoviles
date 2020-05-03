@@ -7,13 +7,13 @@
     tools:context=".view.createAccount.ValidateAccountUser">
 
     <TextView
-        android:id="@+id/textView25"
+        android:id="@+id/txt_validateAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="64dp"
         android:layout_marginEnd="8dp"
-        android:textSize="30dp"
+        android:textSize="35dp"
         android:textStyle="bold"
         android:text="Validar cuenta"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,32 +21,35 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView26"
+        android:id="@+id/txt_summaryValidate"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:textAlignment="center"
+        android:textSize="20dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
         android:text="Te hemos enviado un codigo a tú correo/numero de telefono para validar que realmente seas tú"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_validateAccount" />
 
     <TextView
-        android:id="@+id/textView27"
+        android:id="@+id/txt_enterCode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
+        android:textStyle="bold"
+        android:textSize="17dp"
         android:text="Ingresa el codigo de verificación"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_summaryValidate" />
 
     <EditText
-        android:id="@+id/editText14"
+        android:id="@+id/editText_validateCode"
         android:layout_width="330dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -57,46 +60,51 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_enterCode" />
 
     <Button
-        android:id="@+id/button6"
-        android:layout_width="wrap_content"
+        android:id="@+id/btn_sendCode"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="64dp"
         android:layout_marginEnd="8dp"
         android:text="Enviar"
+        android:background="@drawable/btn_one"
+        android:textColor="#FFFFFFFF"
+        android:layout_width="290dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText14" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_validateCode" />
 
     <Button
-        android:id="@+id/button7"
-        android:layout_width="wrap_content"
+        android:id="@+id/btn_resendCode"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:background="@drawable/btn_one"
+        android:textColor="#FFFFFFFF"
+        android:layout_width="290dp"
         android:text="Re-enviar codigo de verificación"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_sendCode" />
 
     <TextView
-        android:id="@+id/textView28"
+        android:id="@+id/txt_problemsValidate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:textStyle="bold"
         android:text="¿Problemas con la verificación? Haz click aquí"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button7" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_resendCode" />
 
     <TextView
-        android:id="@+id/textView29"
+        android:id="@+id/txt_helpValidate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -107,6 +115,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView28"
+        app:layout_constraintTop_toBottomOf="@+id/txt_problemsValidate"
         app:layout_constraintVertical_bias="0.95" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.application.proyectoappmoviles.view.login;
+package com.application.proyectoappmoviles.view.account.aboutUs;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.application.proyectoappmoviles.R;
 
-public class LoginCollaborator extends AppCompatActivity {
+public class AboutUs extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_collaborator);
+        setContentView(R.layout.activity_about_us);
     }
 }

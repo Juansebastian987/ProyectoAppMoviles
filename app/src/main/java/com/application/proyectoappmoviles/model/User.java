@@ -10,6 +10,8 @@ public class User implements Serializable {
     private String password;
     private String id;
     private String type;
+    private QuestionsCollaborator questionsCollaborator;
+    private QuestionsUser questionsUser;
 
     public User(String id, String full_name, String number, String email, String password, String type) {
         this.full_name = full_name;
@@ -18,7 +20,42 @@ public class User implements Serializable {
         this.password = password;
         this.id = id;
         this.type = type;
+    }
 
+    public User( String id,String full_name, String number, String email, String password, String type, QuestionsCollaborator questionsCollaborator) {
+        this.full_name = full_name;
+        this.number = number;
+        this.email = email;
+        this.password = password;
+        this.id = id;
+        this.type = type;
+        this.questionsCollaborator = questionsCollaborator;
+    }
+
+    public User( String id,String full_name, String number, String email, String password, String type, QuestionsUser questionsUser) {
+        this.full_name = full_name;
+        this.number = number;
+        this.email = email;
+        this.password = password;
+        this.id = id;
+        this.type = type;
+        this.questionsUser = questionsUser;
+    }
+
+    public QuestionsCollaborator getQuestionsCollaborator() {
+        return questionsCollaborator;
+    }
+
+    public void setQuestionsCollaborator(QuestionsCollaborator questionsCollaborator) {
+        this.questionsCollaborator = questionsCollaborator;
+    }
+
+    public QuestionsUser getQuestionsUser() {
+        return questionsUser;
+    }
+
+    public void setQuestionsUser(QuestionsUser questionsUser) {
+        this.questionsUser = questionsUser;
     }
 
     public String getType() {

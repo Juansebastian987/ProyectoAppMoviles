@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.view.View;
 
 import com.application.proyectoappmoviles.model.User;
+import com.application.proyectoappmoviles.view.createAccount.AskCollaborator;
 import com.application.proyectoappmoviles.view.createAccount.CreateAccountCollaborator;
 import com.application.proyectoappmoviles.view.createAccount.ValidateAccountUser;
 
@@ -36,7 +37,7 @@ public class CreateAccountCollaboratorController implements View.OnClickListener
 
             User user = new User("",name, number, email, pwd, "1");
 
-            Intent i = new Intent(createAccountCollaborator, ValidateAccountUser.class);
+            Intent i = new Intent(createAccountCollaborator, AskCollaborator.class);
             i.putExtra("user", user);
             createAccountCollaborator.startActivity(i);
             createAccountCollaborator.finish();

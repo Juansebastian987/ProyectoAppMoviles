@@ -41,6 +41,8 @@ public class ValidateController implements View.OnClickListener {
     public void onClick(View view) {
         if(validateAccountUser.getBtn_sendCode() == view){
 
+            Log.i(">>>","email: "+user.getEmail()+" pwd:"+user.getPassword());
+
             FirebaseAuth.getInstance().createUserWithEmailAndPassword(user.getEmail(), user.getPassword())
             .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                 @Override

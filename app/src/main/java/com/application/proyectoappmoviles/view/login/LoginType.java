@@ -26,7 +26,7 @@ public class LoginType extends AppCompatActivity {
         img_loginType = findViewById(R.id.img_createType);
         btn_loginUser = findViewById(R.id.btn_createUser);
         btn_loginCollaborator = findViewById(R.id.btn_createCollaborator);
-        txt_helpLoginType = findViewById(R.id.txt_helpcreateType);
+        txt_helpLoginType = findViewById(R.id.txt_helpLoginType);
 
         loginTypeController = new LoginTypeController(this);
     }

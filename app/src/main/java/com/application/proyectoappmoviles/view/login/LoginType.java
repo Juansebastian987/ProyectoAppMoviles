@@ -24,8 +24,8 @@ public class LoginType extends AppCompatActivity {
         setContentView(R.layout.activity_login_type);
 
         img_loginType = findViewById(R.id.img_loginType);
-        btn_loginUser = findViewById(R.id.btn_loginUser);
-        btn_loginCollaborator = findViewById(R.id.btn_loginCollaborator);
+        btn_loginUser = findViewById(R.id.btn_service);
+        btn_loginCollaborator = findViewById(R.id.btn_product);
         txt_helpLoginType = findViewById(R.id.txt_helpLoginType);
 
         loginTypeController = new LoginTypeController(this);

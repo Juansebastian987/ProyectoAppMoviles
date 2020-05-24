@@ -19,8 +19,8 @@ public class CreateAccountType extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crear_account_type);
 
-        btn_loginUser = findViewById(R.id.btn_loginUser);
-        btn_loginCollaborator = findViewById(R.id.btn_loginCollaborator);
+        btn_loginUser = findViewById(R.id.btn_service);
+        btn_loginCollaborator = findViewById(R.id.btn_product);
 
         createAccountTypeController = new CreateAccountTypeController(this);
     }

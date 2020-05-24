@@ -2,9 +2,8 @@ package com.application.proyectoappmoviles.view.home;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ordersPlacedActivity extends AppCompatActivity {
+public class ProductActivity extends AppCompatActivity {
 
-//cambio de prueba
 
 
 
@@ -12,7 +11,4 @@ public class ordersPlacedActivity extends AppCompatActivity {
 
 
     //trying to fix things up
-
-
-
 }

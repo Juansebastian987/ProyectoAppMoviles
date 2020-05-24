@@ -5,9 +5,9 @@ import android.view.View;
 
 import com.application.proyectoappmoviles.R;
 import com.application.proyectoappmoviles.view.account.aboutUs.AboutUs;
-import com.application.proyectoappmoviles.view.home.ordersPlacedActivity;
-import com.application.proyectoappmoviles.view.home.productActivity;
-import com.application.proyectoappmoviles.view.home.serviceActivity;
+import com.application.proyectoappmoviles.view.home.OrdersPlacedActivity;
+import com.application.proyectoappmoviles.view.home.ProductActivity;
+import com.application.proyectoappmoviles.view.home.ServiceActivity;
 import com.application.proyectoappmoviles.view.home.HomeActivity;
 
 public class HomeController implements View.OnClickListener{
@@ -20,6 +20,10 @@ private Intent intent;
 public HomeController(HomeActivity activity){
     this.activity=activity;
 
+    activity.getBtn_help().setOnClickListener(this);
+    activity.getBtn_ordersPlaced().setOnClickListener(this);
+    activity.getBtn_product().setOnClickListener(this);
+    activity.getBtn_service().setOnClickListener(this);
 }
 
 
@@ -34,16 +38,16 @@ public HomeController(HomeActivity activity){
 
         case R.id.btn_product:
 
-            intent= new Intent(activity, productActivity.class);
+            intent= new Intent(activity, ProductActivity.class);
             activity.startActivity(intent);
 
         case R.id.btn_ordersPlaced:
 
-            intent= new Intent(activity, ordersPlacedActivity.class);
+            intent= new Intent(activity, OrdersPlacedActivity.class);
             activity.startActivity(intent);
 
         case R.id.btn_service:
-            intent= new Intent(activity, serviceActivity.class);
+            intent= new Intent(activity, ServiceActivity.class);
             activity.startActivity(intent);
 
 

@@ -27,9 +27,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".view.home.HomeActivity" />
-        <activity android:name=".view.home.ordersPlacedActivity" />
-        <activity android:name=".view.home.productActivity" />
-        <activity android:name=".view.home.serviceActivity" />
+        <activity android:name=".view.home.OrdersPlacedActivity" />
+        <activity android:name=".view.home.ProductActivity" />
+        <activity android:name=".view.home.ServiceActivity" />
     </application>
 
 </manifest>

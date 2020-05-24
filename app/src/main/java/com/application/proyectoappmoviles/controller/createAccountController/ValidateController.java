@@ -1,5 +1,6 @@
 package com.application.proyectoappmoviles.controller.createAccountController;
 
+import android.content.Intent;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
@@ -8,6 +9,7 @@ import androidx.annotation.NonNull;
 
 import com.application.proyectoappmoviles.model.User;
 import com.application.proyectoappmoviles.view.createAccount.ValidateAccountUser;
+import com.application.proyectoappmoviles.view.home.HomeActivity;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;
@@ -43,10 +45,6 @@ public class ValidateController implements View.OnClickListener {
             Log.i(">>>", user.getNumber());
             Log.i(">>>", user.getPassword());
 
-        //    Intent i = new Intent(validateAccountUser, Menu.class);
-        //    validateAccountUser.startActivity(i);
-        //    validateAccountUser.finish();
-
             FirebaseAuth.getInstance().createUserWithEmailAndPassword(user.getEmail(), user.getPassword())
             .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                 @Override
@@ -61,6 +59,9 @@ public class ValidateController implements View.OnClickListener {
                 }
             });
 
+            Intent i = new Intent(validateAccountUser, HomeActivity.class);
+            validateAccountUser.startActivity(i);
+            validateAccountUser.finish();
 
         }
     }

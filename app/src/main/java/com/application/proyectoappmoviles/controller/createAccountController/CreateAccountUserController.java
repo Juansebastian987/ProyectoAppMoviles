@@ -32,9 +32,9 @@ public class CreateAccountUserController implements View.OnClickListener {
             String name = createAccountUser.getEditText_nameUser().getText().toString();
             String number = createAccountUser.getEditText_numberUser().getText().toString();
             String email = createAccountUser.getEditText_emailUser().getText().toString();
-            String pwd = createAccountUser.getEditText_emailUser().getText().toString();
+            String pwd = createAccountUser.getEditText_pwdUser().getText().toString();
 
-            User user = new User(name, number, email, pwd);
+            User user = new User("",name, number, email, pwd, "0");
 
             Intent i = new Intent(createAccountUser, ValidateAccountUser.class);
             i.putExtra("user", user);

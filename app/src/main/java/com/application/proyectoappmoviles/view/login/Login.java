@@ -31,6 +31,14 @@ public class Login extends AppCompatActivity {
         loginController = new LoginController(this);
     }
 
+    public LoginController getLoginController() {
+        return loginController;
+    }
+
+    public void setLoginController(LoginController loginController) {
+        this.loginController = loginController;
+    }
+
     public TextView getTxt_helpPrincipal() {
         return txt_helpPrincipal;
     }

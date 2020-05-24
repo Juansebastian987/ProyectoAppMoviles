@@ -8,12 +8,33 @@ public class User implements Serializable {
     private String number;
     private String email;
     private String password;
+    private String id;
+    private String type;
 
-    public User(String full_name, String number, String email, String password) {
+    public User(String id, String full_name, String number, String email, String password, String type) {
         this.full_name = full_name;
         this.number = number;
         this.email = email;
         this.password = password;
+        this.id = id;
+        this.type = type;
+
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getFull_name() {

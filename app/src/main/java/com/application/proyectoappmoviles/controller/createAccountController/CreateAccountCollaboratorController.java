@@ -34,7 +34,7 @@ public class CreateAccountCollaboratorController implements View.OnClickListener
             String email = createAccountCollaborator.getEditText_emailCollaborator().getText().toString();
             String pwd = createAccountCollaborator.getEditText_pwdCollaborator().getText().toString();
 
-            User user = new User(name, number, email, pwd);
+            User user = new User("",name, number, email, pwd, "1");
 
             Intent i = new Intent(createAccountCollaborator, ValidateAccountUser.class);
             i.putExtra("user", user);

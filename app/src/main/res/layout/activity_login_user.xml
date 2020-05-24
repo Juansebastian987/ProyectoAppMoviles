@@ -22,35 +22,35 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txt_numberCelUser"
+        android:id="@+id/txt_emailLoginUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="42dp"
         android:layout_marginEnd="8dp"
-        android:text="Número de celular"
-        android:textStyle="bold"
+        android:text="Correo electronico"
         android:textSize="18dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginUser" />
 
     <EditText
-        android:id="@+id/editText_loginUserCel"
+        android:id="@+id/editText_loginUserEmail"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
-        android:hint="Ingresa tú número celular"
+        android:hint="Ingresa tú correo"
         android:inputType="textPersonName"
         android:text=""
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.294"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_numberCelUser" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_emailLoginUser" />
 
     <TextView
         android:id="@+id/txt_pwdLoginUser"
@@ -65,7 +65,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.087"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_loginUserCel" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_loginUserEmail" />
 
     <EditText
         android:id="@+id/editText_loginPwdUser"

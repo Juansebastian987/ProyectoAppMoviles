@@ -14,7 +14,7 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class ValidateController implements View.OnClickListener {
 
@@ -40,15 +40,26 @@ public class ValidateController implements View.OnClickListener {
     @Override
     public void onClick(View view) {
         if(validateAccountUser.getBtn_sendCode() == view){
-            Log.i(">>>", user.getEmail());
-            Log.i(">>>", user.getFull_name());
-            Log.i(">>>", user.getNumber());
-            Log.i(">>>", user.getPassword());
 
             FirebaseAuth.getInstance().createUserWithEmailAndPassword(user.getEmail(), user.getPassword())
             .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                 @Override
                 public void onSuccess(AuthResult authResult) {
+                    String id = FirebaseAuth.getInstance().getUid();
+                    user.setId(id);
+
+                    if(user.getType().equals("0")){
+                        FirebaseDatabase.getInstance().getReference()
+                                .child("users").child(user.getId()).setValue(user);
+                    }
+                    else if(user.getType().equals("1")){
+                        FirebaseDatabase.getInstance().getReference()
+                                .child("collaborator").child(user.getId()).setValue(user);
+                    }
+
+                    Intent i = new Intent(validateAccountUser, HomeActivity.class);
+                    validateAccountUser.startActivity(i);
+                    validateAccountUser.finish();
 
                 }
             })
@@ -58,11 +69,6 @@ public class ValidateController implements View.OnClickListener {
                     Toast.makeText(validateAccountUser, e.getLocalizedMessage(), Toast.LENGTH_LONG).show();
                 }
             });
-
-            Intent i = new Intent(validateAccountUser, HomeActivity.class);
-            validateAccountUser.startActivity(i);
-            validateAccountUser.finish();
-
         }
     }
 }

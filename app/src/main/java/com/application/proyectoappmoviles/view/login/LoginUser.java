@@ -12,7 +12,7 @@ import com.application.proyectoappmoviles.controller.loginController.LoginUserCo
 
 public class LoginUser extends AppCompatActivity {
 
-    private EditText loginUserCel;
+    private EditText loginUserEmail;
     private EditText loginPwdUser;
     private Button btn_login;
     private TextView txt_loginUserProblem;
@@ -24,7 +24,7 @@ public class LoginUser extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_user);
 
-        loginUserCel = findViewById(R.id.editText_loginUserCel);
+        loginUserEmail = findViewById(R.id.editText_loginUserEmail);
         loginPwdUser = findViewById(R.id.editText_loginPwdUser);
         btn_login = findViewById(R.id.btn_createUser);
         txt_loginUserProblem = findViewById(R.id.txt_loginUserProblem);
@@ -49,14 +49,6 @@ public class LoginUser extends AppCompatActivity {
         this.txt_helpLoginUser = txt_helpLoginUser;
     }
 
-    public EditText getLoginUserCel() {
-        return loginUserCel;
-    }
-
-    public void setLoginUserCel(EditText loginUserCel) {
-        this.loginUserCel = loginUserCel;
-    }
-
     public EditText getLoginPwdUser() {
         return loginPwdUser;
     }
@@ -71,5 +63,21 @@ public class LoginUser extends AppCompatActivity {
 
     public void setBtn_login(Button btn_login) {
         this.btn_login = btn_login;
+    }
+
+    public EditText getLoginUserEmail() {
+        return loginUserEmail;
+    }
+
+    public void setLoginUserEmail(EditText loginUserEmail) {
+        this.loginUserEmail = loginUserEmail;
+    }
+
+    public LoginUserController getLoginUserController() {
+        return loginUserController;
+    }
+
+    public void setLoginUserController(LoginUserController loginUserController) {
+        this.loginUserController = loginUserController;
     }
 }

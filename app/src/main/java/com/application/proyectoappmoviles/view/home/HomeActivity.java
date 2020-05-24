@@ -20,9 +20,9 @@ protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_home);
 
-    btn_help= findViewById(R.id.btn_help);
-    btn_product= findViewById(R.id.btn_product);
-    btn_service= findViewById(R.id.btn_service);
+    btn_help= findViewById(R.id.btn_helpC);
+    btn_product= findViewById(R.id.btn_pendentpro);
+    btn_service= findViewById(R.id.btn_pendentserv);
 
 
 

@@ -10,8 +10,8 @@ import com.application.proyectoappmoviles.controller.createAccountController.Cre
 
 public class CreateAccountType extends AppCompatActivity {
 
-    private Button btn_loginUser;
-    private Button btn_loginCollaborator;
+    private Button btn_createUser;
+    private Button btn_createCollaborator;
     private CreateAccountTypeController createAccountTypeController;
 
     @Override
@@ -19,8 +19,8 @@ public class CreateAccountType extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crear_account_type);
 
-        btn_loginUser = findViewById(R.id.btn_loginUser);
-        btn_loginCollaborator = findViewById(R.id.btn_loginCollaborator);
+        btn_createUser = findViewById(R.id.btn_createUser);
+        btn_createCollaborator = findViewById(R.id.btn_createCollaborator);
 
         createAccountTypeController = new CreateAccountTypeController(this);
     }
@@ -33,19 +33,19 @@ public class CreateAccountType extends AppCompatActivity {
         this.createAccountTypeController = createAccountTypeController;
     }
 
-    public Button getBtn_loginUser() {
-        return btn_loginUser;
+    public Button getBtn_createUser() {
+        return btn_createUser;
     }
 
-    public void setBtn_loginUser(Button btn_loginUser) {
-        this.btn_loginUser = btn_loginUser;
+    public void setBtn_createUser(Button btn_createUser) {
+        this.btn_createUser = btn_createUser;
     }
 
-    public Button getBtn_loginCollaborator() {
-        return btn_loginCollaborator;
+    public Button getBtn_createCollaborator() {
+        return btn_createCollaborator;
     }
 
-    public void setBtn_loginCollaborator(Button btn_loginCollaborator) {
-        this.btn_loginCollaborator = btn_loginCollaborator;
+    public void setBtn_createCollaborator(Button btn_createCollaborator) {
+        this.btn_createCollaborator = btn_createCollaborator;
     }
 }

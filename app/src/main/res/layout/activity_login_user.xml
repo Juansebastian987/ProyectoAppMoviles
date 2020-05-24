@@ -93,10 +93,10 @@
         android:text="¿Problemas para iniciar sesión?"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_loginUser" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_createUser" />
 
     <Button
-        android:id="@+id/btn_loginUser"
+        android:id="@+id/btn_createUser"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"

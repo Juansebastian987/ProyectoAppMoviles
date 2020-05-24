@@ -26,7 +26,7 @@ public class LoginUser extends AppCompatActivity {
 
         loginUserCel = findViewById(R.id.editText_loginUserCel);
         loginPwdUser = findViewById(R.id.editText_loginPwdUser);
-        btn_login = findViewById(R.id.btn_loginUser);
+        btn_login = findViewById(R.id.btn_createUser);
         txt_loginUserProblem = findViewById(R.id.txt_loginUserProblem);
         txt_helpLoginUser = findViewById(R.id.txt_helpLoginUser);
 

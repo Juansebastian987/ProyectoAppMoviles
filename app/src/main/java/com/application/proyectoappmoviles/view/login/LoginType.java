@@ -23,10 +23,10 @@ public class LoginType extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_type);
 
-        img_loginType = findViewById(R.id.img_loginType);
-        btn_loginUser = findViewById(R.id.btn_loginUser);
-        btn_loginCollaborator = findViewById(R.id.btn_loginCollaborator);
-        txt_helpLoginType = findViewById(R.id.txt_helpLoginType);
+        img_loginType = findViewById(R.id.img_createType);
+        btn_loginUser = findViewById(R.id.btn_createUser);
+        btn_loginCollaborator = findViewById(R.id.btn_createCollaborator);
+        txt_helpLoginType = findViewById(R.id.txt_helpcreateType);
 
         loginTypeController = new LoginTypeController(this);
     }

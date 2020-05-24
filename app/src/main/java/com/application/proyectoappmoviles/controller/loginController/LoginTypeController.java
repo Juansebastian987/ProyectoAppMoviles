@@ -1,13 +1,20 @@
 package com.application.proyectoappmoviles.controller.loginController;
 
-import com.application.proyectoappmoviles.view.login.LoginType;
+import android.content.Intent;
+import android.view.View;
 
-public class LoginTypeController {
+import com.application.proyectoappmoviles.view.login.LoginType;
+import com.application.proyectoappmoviles.view.login.LoginUser;
+
+public class LoginTypeController implements View.OnClickListener {
 
     private LoginType loginType;
 
     public LoginTypeController(LoginType loginType) {
         this.loginType = loginType;
+
+        loginType.getBtn_loginCollaborator().setOnClickListener(this);
+        loginType.getBtn_loginUser().setOnClickListener(this);
     }
 
     public LoginType getLoginType() {
@@ -16,5 +23,19 @@ public class LoginTypeController {
 
     public void setLoginType(LoginType loginType) {
         this.loginType = loginType;
+    }
+
+    @Override
+    public void onClick(View view) {
+        if(loginType.getBtn_loginUser() == view){
+            Intent i = new Intent(loginType, LoginUser.class);
+            loginType.startActivity(i);
+            loginType.onBackPressed();
+
+        }else if(loginType.getBtn_loginCollaborator() == view){
+            Intent i = new Intent(loginType, LoginUser.class);
+            loginType.startActivity(i);
+            loginType.onBackPressed();
+        }
     }
 }

@@ -11,7 +11,6 @@ import com.application.proyectoappmoviles.controller.homeController.ServiceContr
 
 public class ServiceActivity extends AppCompatActivity {
 
-
     private Button especial_serv;
     private Button paseo_serv;
     private Button banio_serv;
@@ -29,7 +28,6 @@ public class ServiceActivity extends AppCompatActivity {
         vet_serv=findViewById(R.id.vet_serv);
 
         controller= new ServiceController(this);
-
     }
 
     public Button getEspecial_serv() {

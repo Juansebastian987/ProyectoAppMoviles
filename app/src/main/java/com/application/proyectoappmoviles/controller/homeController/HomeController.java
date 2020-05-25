@@ -16,7 +16,6 @@ private HomeActivity activity;
 private Intent intent;
 
 
-
 public HomeController(HomeActivity activity){
     this.activity=activity;
 

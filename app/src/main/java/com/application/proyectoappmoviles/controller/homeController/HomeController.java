@@ -30,12 +30,12 @@ public HomeController(HomeActivity activity){
     public void onClick(View v) {
 
     switch (v.getId()){
-        case R.id.btn_helpC:
+        case R.id.btn_help:
             intent= new Intent(activity, AboutUs.class);
             activity.startActivity(intent);
 
 
-        case R.id.btn_pendentpro:
+        case R.id.btn_product:
 
             intent= new Intent(activity, ProductActivity.class);
             activity.startActivity(intent);
@@ -45,7 +45,7 @@ public HomeController(HomeActivity activity){
             intent= new Intent(activity, OrdersPlacedActivity.class);
             activity.startActivity(intent);
 
-        case R.id.btn_pendentserv:
+        case R.id.btn_service:
             intent= new Intent(activity, ServiceActivity.class);
             activity.startActivity(intent);
 

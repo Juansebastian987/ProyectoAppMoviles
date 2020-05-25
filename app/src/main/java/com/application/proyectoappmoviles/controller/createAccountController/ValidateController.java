@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import com.application.proyectoappmoviles.model.User;
 import com.application.proyectoappmoviles.view.createAccount.ValidateAccountUser;
 import com.application.proyectoappmoviles.view.home.HomeActivity;
+import com.application.proyectoappmoviles.view.home.HomeCActivity;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;
@@ -53,16 +54,19 @@ public class ValidateController implements View.OnClickListener {
                     if(user.getType().equals("0")){
                         FirebaseDatabase.getInstance().getReference()
                                 .child("users").child(user.getId()).setValue(user);
+
+                        Intent i = new Intent(validateAccountUser, HomeActivity.class);
+                        validateAccountUser.startActivity(i);
+                        validateAccountUser.finish();
                     }
                     else if(user.getType().equals("1")){
                         FirebaseDatabase.getInstance().getReference()
                                 .child("collaborator").child(user.getId()).setValue(user);
+
+                        Intent i = new Intent(validateAccountUser, HomeCActivity.class);
+                        validateAccountUser.startActivity(i);
+                        validateAccountUser.finish();
                     }
-
-                    Intent i = new Intent(validateAccountUser, HomeActivity.class);
-                    validateAccountUser.startActivity(i);
-                    validateAccountUser.finish();
-
                 }
             })
             .addOnFailureListener(new OnFailureListener() {

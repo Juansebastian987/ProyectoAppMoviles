@@ -32,13 +32,9 @@ public class LoginController implements View.OnClickListener {
         if(login.getBtn_loginPrincipal() == view){
             Intent i = new Intent(login, LoginType.class);
             login.startActivity(i);
-            Log.i(">>>", "G");
-
         }else if(login.getBtn_createAccountPrincipal() == view){
             Intent i = new Intent(login, CreateAccountType.class);
             login.startActivity(i);
-
-            Log.i(">>>", "F");
         }
     }
 }

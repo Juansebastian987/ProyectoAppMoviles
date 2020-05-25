@@ -39,6 +39,12 @@ public class LoginUserController implements View.OnClickListener {
             String email = loginUser.getLoginUserEmail().getText().toString();
             String pwd = loginUser.getLoginPwdUser().getText().toString();
 
+            //if(){ -> If encargado de sacar el dato de
+            //
+            //}
+
+            Log.i(">>>", email+" "+pwd);
+
             FirebaseAuth.getInstance().signInWithEmailAndPassword(email,pwd)
                 .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                     @Override

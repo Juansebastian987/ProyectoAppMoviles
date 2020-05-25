@@ -29,6 +29,7 @@ public class HomeCActivity extends AppCompatActivity {
 
     }
     //this is a usless comment just to make a commit
+    //this is another useless comment
     public Button getBtn_pendentserv() {
         return btn_pendentserv;
     }

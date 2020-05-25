@@ -12,6 +12,7 @@ public class ProductActivity extends AppCompatActivity {
 
     private Button comida1, comida2,comida3,comida4;
     private ProductController productController;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

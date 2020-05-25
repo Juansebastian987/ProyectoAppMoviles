@@ -16,18 +16,20 @@ public class HomeActivity extends AppCompatActivity {
     private Button btn_ordersPlaced;
     private HomeController controller;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_home);
-    btn_help= findViewById(R.id.btn_helpC);
-    btn_product= findViewById(R.id.btn_pendentpro);
-    btn_service= findViewById(R.id.btn_pendentserv);
-    btn_ordersPlaced=findViewById(R.id.btn_ordersPlaced);
 
+    btn_help= findViewById(R.id.btn_help);
+    btn_product= findViewById(R.id.btn_product);
+    btn_service= findViewById(R.id.btn_service);
+
+    btn_ordersPlaced=findViewById(R.id.btn_ordersPlaced);
     controller= new HomeController(this);
 
-    }
+}
 
     public HomeController getController() {
         return controller;

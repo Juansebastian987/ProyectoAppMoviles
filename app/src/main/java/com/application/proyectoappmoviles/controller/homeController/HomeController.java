@@ -1,5 +1,6 @@
 package com.application.proyectoappmoviles.controller.homeController;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.view.View;
 
@@ -19,20 +20,22 @@ private Intent intent;
 public HomeController(HomeActivity activity){
     this.activity=activity;
 
-    activity.getBtn_help().setOnClickListener(this);
-    activity.getBtn_ordersPlaced().setOnClickListener(this);
-    activity.getBtn_product().setOnClickListener(this);
-    activity.getBtn_service().setOnClickListener(this);
+      activity.getBtn_help().setOnClickListener(this);
+      activity.getBtn_ordersPlaced().setOnClickListener(this);
+      activity.getBtn_product().setOnClickListener(this);
+      activity.getBtn_service().setOnClickListener(this);
+      activity.getFab().setOnClickListener(this);
 }
 
 
+    @SuppressLint("ResourceType")
     @Override
     public void onClick(View v) {
 
     switch (v.getId()){
-        case R.id.btn_help:
-            intent= new Intent(activity, AboutUs.class);
-            activity.startActivity(intent);
+          case R.id.btn_help:
+              intent= new Intent(activity, AboutUs.class);
+              activity.startActivity(intent);
 
 
         case R.id.btn_product:
@@ -40,15 +43,26 @@ public HomeController(HomeActivity activity){
             intent= new Intent(activity, ProductActivity.class);
             activity.startActivity(intent);
 
-        case R.id.btn_ordersPlaced:
 
-            intent= new Intent(activity, OrdersPlacedActivity.class);
-            activity.startActivity(intent);
+            case R.id.btn_ordersPlaced:
+
+              intent= new Intent(activity, OrdersPlacedActivity.class);
+             activity.startActivity(intent);
 
         case R.id.btn_service:
             intent= new Intent(activity, ServiceActivity.class);
             activity.startActivity(intent);
 
+
+
+        case R.id.fab:
+            intent= new Intent(activity, ServiceActivity.class);
+            activity.startActivity(intent);
+
+
+
+
+            }
 
 
 
@@ -68,4 +82,4 @@ public HomeController(HomeActivity activity){
 
 
 
-}
+

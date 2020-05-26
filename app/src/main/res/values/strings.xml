@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">ProyectoAppMoviles</string>
     <string name="title_activity_create_account_user">CreateAccountUser</string>
+    <string name="ayuda">Ayuda</string>
+    <string name="openNavDrawer">Navigation Drawer Open</string>
+    <string name="closeNavDrawer">Navigation Drawer close</string>
+    <string name="mi_perfil">Mi perfil</string>
+    <string name="empty" />
+
 </resources>

@@ -2,17 +2,15 @@ package com.application.proyectoappmoviles.view.home;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.os.Bundle;
+
+import com.application.proyectoappmoviles.R;
+
 public class OrdersPlacedActivity extends AppCompatActivity {
 
-//cambio de prueba
-
-
-
-
-
-
-    //trying to fix things up
-
-
-
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_orders_placed);
+    }
 }

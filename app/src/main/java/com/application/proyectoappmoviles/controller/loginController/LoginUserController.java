@@ -43,13 +43,12 @@ public class LoginUserController implements View.OnClickListener {
             //
             //}
 
-            Log.i(">>>", email+" "+pwd);
+           // Log.i(">>>", email+" "+pwd);
 
             FirebaseAuth.getInstance().signInWithEmailAndPassword(email,pwd)
                 .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                     @Override
                     public void onSuccess(AuthResult authResult) {
-
                         Intent i = new Intent(loginUser, HomeActivity.class);
                         loginUser.startActivity(i);
                         loginUser.finish();

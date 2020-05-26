@@ -30,12 +30,12 @@ public class LoginTypeController implements View.OnClickListener {
         if(loginType.getBtn_loginUser() == view){
             Intent i = new Intent(loginType, LoginUser.class);
             loginType.startActivity(i);
-            loginType.onBackPressed();
+            loginType.finish();
 
         }else if(loginType.getBtn_loginCollaborator() == view){
             Intent i = new Intent(loginType, LoginUser.class);
             loginType.startActivity(i);
-            loginType.onBackPressed();
+            loginType.finish();
         }
     }
 }

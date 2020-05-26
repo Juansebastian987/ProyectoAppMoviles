@@ -11,10 +11,8 @@ public class ServiceController implements View.OnClickListener {
     private ServiceActivity activity;
     private Intent intent;
 
-
     public ServiceController(ServiceActivity activity){
-            this.activity=activity;
-
+        this.activity=activity;
         activity.getBanio_serv().setOnClickListener(this);
         activity.getEspecial_serv().setOnClickListener(this);
         activity.getPaseo_serv().setOnClickListener(this);
@@ -23,16 +21,6 @@ public class ServiceController implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
-
-            case R.id.banio_serv:
-
-            case R.id.especial_serv:
-
-            case R.id.paseo_serv:
-
-            case R.id.vet_serv:
-        }
-
+        //Hacerlo con IF
     }
 }

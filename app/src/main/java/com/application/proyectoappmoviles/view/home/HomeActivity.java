@@ -24,10 +24,8 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     private Button btn_ordersPlaced;
     private HomeController controller;
     private FloatingActionButton fab;
-
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,15 +39,9 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     btn_ordersPlaced=findViewById(R.id.btn_ordersPlaced);
     fab=findViewById(R.id.fab);
 
-
     drawerLayout = findViewById(R.id.drawer_layout);
     navigationView=findViewById(R.id.nav_view);
     navigationView.setNavigationItemSelectedListener(this);
-
-
-
-
-
 
     controller= new HomeController(this);
 
@@ -58,7 +50,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-
         return false;
     }
 

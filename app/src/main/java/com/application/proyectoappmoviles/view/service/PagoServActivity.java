@@ -23,7 +23,7 @@ public class PagoServActivity extends AppCompatActivity {
         setContentView(R.layout.activity_pagoserv);
 
         txt_name= findViewById(R.id.txt_name);
-        txt_mail= findViewById(R.id.txt_mail);
+        txt_mail= findViewById(R.id.txt_mail_col);
         txt_tel= findViewById(R.id.txt_tel);
         txt_serv= findViewById(R.id.txt_serv);
         txt_cost= findViewById(R.id.txt_cost);

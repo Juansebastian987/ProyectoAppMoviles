@@ -34,6 +34,7 @@
         <activity android:name=".view.home.HomeCActivity" />
         <activity android:name=".view.service.PaseoActivity" />
         <activity android:name=".view.service.PagoServActivity" />
+        <activity android:name=".view.login.LoginCollaborator" />
     </application>
 
 </manifest>

@@ -11,9 +11,10 @@ public class Service implements Serializable {
     private String pet_size;
     private String pet_act;
     private String pet_fact;
+    private String service;
 
 
-    public Service(String address, String pet_type, String pet_size, String pet_act, String pet_fact, String id_user, String id_collaborator) {
+    public Service(String address, String pet_type, String pet_size, String pet_act, String pet_fact, String id_user, String id_collaborator, String service) {
         this.address = address;
         this.pet_type = pet_type;
         this.pet_size = pet_size;
@@ -21,12 +22,20 @@ public class Service implements Serializable {
         this.pet_fact = pet_fact;
         this.id_user=id_user;
         this.id_collaborator=id_collaborator;
+        this.service=service;
     }
 
     public Service() {
 
     }
 
+    public String getService() {
+        return service;
+    }
+
+    public void setService(String service) {
+        this.service = service;
+    }
 
     public String getAddress() {
         return address;

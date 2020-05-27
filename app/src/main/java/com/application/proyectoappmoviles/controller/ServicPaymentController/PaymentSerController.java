@@ -44,6 +44,7 @@ public class PaymentSerController implements View.OnClickListener{
                         if(dataSnapshot.exists()){
 
                             Service service= (Service) activity.getIntent().getSerializableExtra("servicio");
+
                             String id = FirebaseAuth.getInstance().getUid();
                             String name = dataSnapshot.child(id).child("full_name").getValue().toString();
                             String email = dataSnapshot.child(id).child("email").getValue().toString();
@@ -54,28 +55,28 @@ public class PaymentSerController implements View.OnClickListener{
                             String act= service.getPet_act();
                             String fact=service.getPet_fact();
                             String colaborador=service.getId_collaborator();
+                            String type_serv= service.getService();
+
 
                             //String producto = activity.getIntent().getExtras().getString("producto");
 
 
-                            if(service!=null){
-                                String costo = "10.000";
-                                //String productoName = "Dog chow 2kg";
-                                String costoTotal = "15.000";
-                                String code = GenerarPalabra();
+                            String costo = "10.000";
+                            String costoTotal = "15.000";
+                            String code = GenerarPalabra();
 
-                                activity.getTxt_name().setText(name);
-                                activity.getTxt_mail().setText(email);
-                                activity.getTxt_tel().setText(cel);
-                               // activity.getTxt_serv().setText(productoName);
-                                activity.getTxt_cost().setText(costo);
-                                activity.getTxt_total().setText(costoTotal);
-                                activity.getTxt_code().setText(code);
+                            activity.getTxt_name().setText(name);
+                            activity.getTxt_mail().setText(email);
+                            activity.getTxt_tel().setText(cel);
+                            activity.getTxt_serv().setText(type_serv);
+                            activity.getTxt_cost().setText(costo);
+                            activity.getTxt_total().setText(costoTotal);
+                            activity.getTxt_code().setText(code);
 
-                                Service servi = new Service(address,type, size,act,fact,id,colaborador);
-                                FirebaseDatabase.getInstance().getReference().child("servicios").child(code).setValue(servi);
+                            Service servi = new Service(address,type, size,act,fact,id,colaborador, type_serv);
+                            FirebaseDatabase.getInstance().getReference().child("servicios").child(code).setValue(servi);
 
-                            }
+
 
                         }
                     }

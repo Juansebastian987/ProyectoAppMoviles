@@ -32,7 +32,14 @@ public class PaseoController implements View.OnClickListener{
                 String interest=activity.getPet_interest().getText().toString();
                 String size=activity.getPet_size().getText().toString();
 
-                Service service= new Service(address,type,size,interest,facts, "", "");
+                //Service service= new Service(address,type,size,interest,facts, "", "", "");
+                Service service= (Service) activity.getIntent().getSerializableExtra("serv");
+                service.setAddress(address);
+                service.setPet_type(type);
+                service.setPet_size(size);
+                service.setPet_act(interest);
+                service.setPet_fact(facts);
+
                 intent= new Intent(activity, PagoServActivity.class);
 
                 intent.putExtra("servicio", service );

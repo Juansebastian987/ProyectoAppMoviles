@@ -6,6 +6,7 @@ import android.view.View;
 import androidx.annotation.NonNull;
 
 import com.application.proyectoappmoviles.model.PagoProducto;
+import com.application.proyectoappmoviles.model.Service;
 import com.application.proyectoappmoviles.view.account.products.Pago;
 import com.application.proyectoappmoviles.view.home.HomeActivity;
 import com.google.firebase.auth.FirebaseAuth;
@@ -57,6 +58,7 @@ public class PagoController implements View.OnClickListener {
                                 FirebaseDatabase.getInstance().getReference().child("productos").child(code).setValue(pagoProducto);
 
                             }
+
                         }
                     }
 

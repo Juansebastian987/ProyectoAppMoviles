@@ -32,6 +32,8 @@
         <activity android:name=".view.home.HomeActivity" />
         <activity android:name=".view.home.ServiceActivity" />
         <activity android:name=".view.home.HomeCActivity" />
+        <activity android:name=".view.service.PaseoActivity" />
+        <activity android:name=".view.service.PagoServActivity" />
     </application>
 
 </manifest>

@@ -5,6 +5,7 @@ import android.view.View;
 
 import com.application.proyectoappmoviles.R;
 import com.application.proyectoappmoviles.view.home.ServiceActivity;
+import com.application.proyectoappmoviles.view.service.PaseoActivity;
 
 public class ServiceController implements View.OnClickListener {
 
@@ -22,5 +23,10 @@ public class ServiceController implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         //Hacerlo con IF
+        if(activity.getPaseo_serv()==v){
+            intent=new Intent(activity, PaseoActivity.class);
+            activity.startActivity(intent);
+        }
+
     }
 }

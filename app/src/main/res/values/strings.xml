@@ -6,5 +6,15 @@
     <string name="closeNavDrawer">Navigation Drawer close</string>
     <string name="mi_perfil">Mi perfil</string>
     <string name="empty" />
+    <string name="resumen_pago">Resumen Pago</string>
+    <string name="tu_nombre_completo">Tu Nombre Completo</string>
+    <string name="xxxxxxxxxxxxxxx">XXXXXXXXXXXXXXX</string>
+    <string name="correo_electr_nico">Correo Electrónico</string>
+    <string name="efectuar_pago">Efectuar pago</string>
+    <string name="costo_total">Costo Total</string>
+    <string name="costo_servicio">Costo Servicio</string>
+    <string name="servicio">Servicio</string>
+    <string name="telefono">Telefono</string>
+    <string name="identificador_de_compra">Identificador de Compra</string>
 
 </resources>

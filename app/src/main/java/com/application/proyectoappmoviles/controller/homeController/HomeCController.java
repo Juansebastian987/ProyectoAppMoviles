@@ -5,6 +5,7 @@ import android.view.View;
 
 import com.application.proyectoappmoviles.view.account.aboutUs.AboutUs;
 import com.application.proyectoappmoviles.view.home.HomeCActivity;
+import com.application.proyectoappmoviles.view.home.Resume;
 
 public class HomeCController implements View.OnClickListener {
 
@@ -16,6 +17,7 @@ public class HomeCController implements View.OnClickListener {
         activity.getBtn_helpC().setOnClickListener(this);
         activity.getBtn_pendentPro().setOnClickListener(this);
         activity.getBtn_pendentserv().setOnClickListener(this);
+        activity.getFab2().setOnClickListener(this);
     }
 
     @Override
@@ -24,6 +26,11 @@ public class HomeCController implements View.OnClickListener {
             intent = new Intent(activity, AboutUs.class);
             activity.startActivity(intent);
             activity.finish();
+        }else if(activity.getFab2()==v){
+            intent=new Intent(activity, Resume.class);
+            activity.startActivity(intent);
+            activity.finish();
+
         }
     }
 }

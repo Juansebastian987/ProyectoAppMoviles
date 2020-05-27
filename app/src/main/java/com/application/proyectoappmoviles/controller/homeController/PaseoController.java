@@ -1,7 +1,9 @@
 package com.application.proyectoappmoviles.controller.homeController;
 
 import android.content.Intent;
+import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 import com.application.proyectoappmoviles.model.Service;
 import com.application.proyectoappmoviles.view.account.products.Pago;
@@ -22,9 +24,19 @@ public class PaseoController implements View.OnClickListener{
 
     @Override
     public void onClick(View v) {
+        Log.e("mens", "el error es:"+ activity.getPet_type().getText().toString());
         if(activity.getBtn_next()==v){
 
-            if(activity.getPet_type()!=null && activity.getAddress()!=null && activity.getPet_facts()!=null & activity.getPet_interest()!=null && activity.getPet_size()!=null){
+            if(activity.getPet_type().getText().toString().isEmpty() && activity.getAddress().getText().toString().isEmpty() && activity.getPet_facts().getText().toString().isEmpty()& activity.getPet_interest().getText().toString().isEmpty() && activity.getPet_size().getText().toString().isEmpty()){
+
+                Toast.makeText(activity, "Por favor inserta todos los datos requeridos", Toast.LENGTH_SHORT).show();
+
+
+
+
+
+            }else{
+
 
                 String type=activity.getPet_type().getText().toString();
                 String address=activity.getAddress().getText().toString();

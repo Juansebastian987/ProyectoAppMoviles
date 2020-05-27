@@ -8,6 +8,7 @@
     import com.application.proyectoappmoviles.view.account.aboutUs.AboutUs;
     import com.application.proyectoappmoviles.view.home.OrdersPlacedActivity;
     import com.application.proyectoappmoviles.view.home.ProductActivity;
+    import com.application.proyectoappmoviles.view.home.Resume;
     import com.application.proyectoappmoviles.view.home.ServiceActivity;
     import com.application.proyectoappmoviles.view.home.HomeActivity;
 
@@ -44,7 +45,7 @@
             activity.startActivity(intent);
         }
         else if(activity.getFab() == v){
-            intent= new Intent(activity, ServiceActivity.class);
+            intent= new Intent(activity, Resume.class);
             activity.startActivity(intent);
          }
         else{

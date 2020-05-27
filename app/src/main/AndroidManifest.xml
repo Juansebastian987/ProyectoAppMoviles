@@ -35,6 +35,7 @@
         <activity android:name=".view.service.PaseoActivity" />
         <activity android:name=".view.service.PagoServActivity" />
         <activity android:name=".view.login.LoginCollaborator" />
+        <activity android:name=".view.home.Resume" />
     </application>
 
 </manifest>
